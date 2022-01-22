@@ -1,0 +1,379 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Admin{
+  color: white;
+  text-align: center;
+}
+.sideBar{
+  position: fixed;
+  
+  top: 0;
+  bottom: 0;
+  left: 0;
+  /* float: left; */
+  background-color: rgb(17, 25, 42);
+  /* height: 745px;
+  width: 20%; */
+  text-align: left;
+  /* overflow: scroll; */
+  margin-right: -17px;
+  margin-bottom: -17px;
+  /* position: absolute; */
+  /* inset: 0px; */
+
+  width: 300px;
+    min-width: 290px;
+    color: rgba(255, 255, 255, 0.7);
+    /* position: relative; */
+    /* z-index: 7; */
+    height: 100%;
+    padding-bottom: 61px;
+
+}
+
+.sideBar:hover{
+  scrollbar-width: thin;
+  overflow-y: scroll;
+  
+}
+
+
+.feature{
+  text-align: left;
+  color: rgb(170, 162, 162)  ;
+  cursor: pointer;
+  padding: 15px;
+  margin: 10px;
+  text-decoration:none;
+
+  /* background-color: black; */
+}
+.feature:hover{
+  color: white;
+}
+
+
+.logOut{
+  /* display: flex;
+  justify-content: center; */
+  display: inline-block;
+  
+  cursor: pointer;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+.power{
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+}
+
+.mainSection{
+  /* float: right; */
+  width: auto;
+  height: 100%;
+  margin-left: 190px;
+}
+.welcome{
+  text-align: center;
+  
+}
+
+.card-title{
+  text-align: center;
+  color: blue;
+}
+
+.num{
+  color: black;
+  text-align: center;
+}
+
+.card{
+  width: 250px;
+  height: 150px;
+  background-color: rgb(238, 232, 221);
+  margin: 40px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px rgb(211, 207, 207);
+
+  
+}
+
+.flexContainer{
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+
+.img{
+  width: 100%;
+}
+.MainDiv{
+  /* float: right; */
+  width: auto;
+  height: 100%;
+  margin-left: 190px;
+}
+.team{
+  width: 300px;
+  height: 100px;
+  margin: 20px;
+  padding: 10px;
+  background-color: wheat;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.HavingTeam{
+  display: flex;
+  justify-content: center;
+}
+
+.WorkingTeams{
+  text-align: center;
+  color: darkblue;
+}
+
+.AttendenceDiv{
+  /* float: right; */
+  width: auto;
+  height: 100%;
+  margin-left: 190px;
+
+}
+.AttendenceHead{
+  text-align: center;
+  color: darkblue;
+}
+.ApplicationPage{
+  /* float: right; */
+  width:100%;
+  height: 100%;
+  margin-left: 190px;
+
+}
+.ApplicationHead{
+/* margin-top: 80px; */
+  text-align: center;
+  color: darkblue;
+}
+
+.TaskManagerPage{
+  /* float: right; */
+  width: auto;
+  height: 100%;
+  margin-left: 190px;
+
+}
+.TaskManagerHead{
+  text-align: center;
+  color: darkblue;
+}
+.AdminImg{
+  width: 120px;
+  height: 120px;
+  border: 1px solid white;
+border-radius: 100px;
+margin: 10px;
+
+display: inline-block;
+}
+
+.InvoiceMain{
+  /* float: right; */
+  width: auto;
+  height: 100px;
+  margin-left: 190px;
+
+}
+.InvoiceHead{
+  text-align: center;
+  color: darkblue;
+}
+.NotificationMain{
+  /* float: right; */
+  width: auto;
+  height: 100%;
+  margin-left: 190px;
+
+}
+.NotificationHead{
+  text-align: center;
+  color: darkblue;
+}
+
+.HolidayMain{
+  /* float: right; */
+  width: auto;
+  height: 100%;
+  margin-left: 190px;
+
+}
+.HolidayHead{
+  text-align: center;
+  color: darkblue;
+}
+
+.TeamNames{
+  text-align: center;
+}
+
+.AdminDivMain{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.ApplicationTable{
+
+  position: absolute;
+  left: 400px;
+
+}
+.bill{
+
+  position: absolute;
+  left: 340px;
+  top: 120px;
+}
+
+.Invoice{
+  position: absolute;
+  left: 340px;
+  top: 150px;
+  color: rgb(214, 16, 16);
+}
+.addr{
+  position: absolute;
+  left: 1200px;
+  top: 110px;
+}
+.address{
+  position: absolute;
+  left: 1200px;
+  top: 140px;
+}
+.invoice_num{
+  position: absolute;
+  left: 340px;
+  top: 250px;
+}
+.Customer_name{
+  position: absolute;
+  left: 340px;
+  top: 330px;
+}
+.Customer_add{
+  position: absolute;
+  left: 340px;
+  top: 380px;
+}
+.billDate{
+  position: absolute;
+  left: 340px;
+  top: 430px;
+}
+.item{
+  position: absolute;
+  left: 340px;
+  top: 500px;
+ 
+}
+.discription{
+  position: absolute;
+  left: 550px;
+  top: 500px;
+ 
+}
+.unitCost{
+  position: absolute;
+  left: 750px;
+  top: 500px;
+
+
+}
+.quantity{
+  position: absolute;
+  left: 950px;
+  top: 500px;
+
+}
+.gst{
+  position: absolute;
+  left: 1150px;
+  top: 500px;
+}
+
+.save{
+  position: absolute;
+  left: 1150px;
+  top: 700px;
+  background-color: chartreuse;
+}
+
+.download{
+  position: absolute;
+  left: 1250px;
+  top: 700px;
+  background-color: chartreuse;
+
+}
+/* .boxing{
+  backgroundColor: 'white',
+  color : 'black',
+  marginLeft:'100px',
+  position: 'absolute',
+  left: '19.7%',
+  width: '1220px'
+} */
+
+.MuiPaper-root {
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #fff;
+}
+
+.AttendanceTable{
+  position: absolute;
+  left: 400px;
+
+}
