@@ -377,3 +377,7 @@ display: inline-block;
   left: 400px;
 
 }
+.heading{
+  text-align: center;
+  color: darkblue;
+}
