@@ -345,9 +345,9 @@ display: inline-block;
 
 .save{
   position: absolute;
-  left: 1150px;
+  left: 300px;
   top: 700px;
-  background-color: chartreuse;
+  /* background-color: chartreuse; */
 }
 
 .download{
@@ -380,4 +380,7 @@ display: inline-block;
 .heading{
   text-align: center;
   color: darkblue;
+}
+.Buttons{
+  display: flex;
 }

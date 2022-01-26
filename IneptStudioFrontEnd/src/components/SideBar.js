@@ -59,10 +59,10 @@ export default function SideBar() {
      <Link  style={{textDecoration : "none"}} to="/invoices"> <h3 className='feature'>Invoices</h3> </Link>
      </div>
      
-     <div  style={{display : 'flex'}}>
+     {/* <div  style={{display : 'flex'}}>
        <NotificationsActiveIcon  style={{marginTop: '26px' , marginLeft: '26px'}}/>
      <Link  style={{textDecoration : "none"}} to="/notification">   <h3  className='feature'>Notifications</h3> </Link>
-     </div>
+     </div> */}
 
      <div  style={{display : 'flex'}}>
        <HolidayVillageIcon  style={{marginTop: '26px' , marginLeft: '26px'}}/>
