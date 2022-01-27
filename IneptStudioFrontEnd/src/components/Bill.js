@@ -1,59 +1,63 @@
 import React from 'react';
 import Button from '@mui/material/Button';
 
+import InvoiceHistory from './InvoiceHistory'
+
+import InvoiceModal from './InvoiceModal'
+
 export default function Bill() {
 
-const [values , setValues] = React.useState({
-  number: '',
-  name: '',
-  address: '',
-  date: '',
-  items: '',
-  descrip: '',
-  unitCosting: '',
-  Quant: '',
-  tax: '',
-})
+// const [values , setValues] = React.useState({
+//   number: '',
+//   name: '',
+//   address: '',
+//   date: '',
+//   items: '',
+//   descrip: '',
+//   unitCosting: '',
+//   Quant: '',
+//   tax: '',
+// })
 
-const handleChange = (prop) => (event) => {
-  setValues({...values , [prop]: event.target.value});
-}
+// const handleChange = (prop) => (event) => {
+//   setValues({...values , [prop]: event.target.value});
+// }
 
 
-const handleSubmit= async (event)=>{
-  event.preventDefault();
-  const body = {
-    number:values.number,
-    name:values.name,
-    address:values.address,
-    date:values.date,
-    items:values.items,
-    descrip:values.descrip,
-    unitCosting:values.unitCosting,
-    Quant:values.Quant,
-    tax:values.tax
-}
-console.log(body);
+// const handleSubmit= async (event)=>{
+//   event.preventDefault();
+//   const body = {
+//     number:values.number,
+//     name:values.name,
+//     address:values.address,
+//     date:values.date,
+//     items:values.items,
+//     descrip:values.descrip,
+//     unitCosting:values.unitCosting,
+//     Quant:values.Quant,
+//     tax:values.tax
+// }
+// console.log(body);
 
-const requestOptions = {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify(body)
-};
+// const requestOptions = {
+//   method: 'POST',
+//   headers: { 'Content-Type': 'application/json' },
+//   body: JSON.stringify(body)
+// };
 
-try{
- const resp1 = await fetch('http://192.168.1.35:3990/getpdf', requestOptions)
- if(resp1.ok)
-    window.open('http://192.168.1.35:3990/dwnld');
- else
-    throw {msg: 'download failed'}
-}
-catch(err){
-  console.log("Err ", err);
-  err = (err.msg)?err.msg: "could not get file"; 
-  alert(err) ;
-}
-}
+// try{
+//  const resp1 = await fetch('http://localhost:3990/getpdf', requestOptions)
+//  if(resp1.ok)
+//     window.open('http://localhost:3990/dwnld');
+//  else
+//     throw {msg: 'download failed'}
+// }
+// catch(err){
+//   console.log("Err ", err);
+//   err = (err.msg)?err.msg: "could not get file"; 
+//   alert(err) ;
+// }
+// }
 
 
  
@@ -66,8 +70,28 @@ catch(err){
   return(
 
     <>
-   <div >
-     <form  onSubmit={handleSubmit} >
+   <div>
+
+   <InvoiceModal/>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+
+<h1>Invoice History</h1>
+   <InvoiceHistory/>
+   
+   <br/>
+<br/>
+<br/>
+
+     {/* <form  onSubmit={handleSubmit} >
  <img src="https://i2.wp.com/ineptstudio.com/wp-content/uploads/2021/09/logo-dark.png?resize=300%2C26&ssl=1" alt="logo"   className='bill'/>
 
 <h1 className='Invoice'  > INVOICE </h1>
@@ -123,7 +147,7 @@ catch(err){
 
 
 {/* <button className='download' type='submit'  > Download </button> */}
-</form>
+{/* </form>  */}
 
    </div>
 
