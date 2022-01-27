@@ -1,5 +1,5 @@
 import React from 'react'
-import { ScheduleComponent, Day, Week, WorkWeek, Month, Agenda, Inject } from '@syncfusion/ej2-react-schedule';
+import HolidayCalendar from './HolidayCalendar'
 
 
 export default function Holidays() {
@@ -10,10 +10,8 @@ export default function Holidays() {
          </div>
          <div class="HolidayMain">
           
-        <ScheduleComponent currentView="Month" selectedDate={new Date(2022,0,21)}>
-        <Inject services={[Day, Week, WorkWeek, Month, Agenda]} />
-  
-         </ScheduleComponent>
+          <HolidayCalendar/>
+       
          </div> 
          </>   
     )
