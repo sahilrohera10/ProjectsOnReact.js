@@ -10,7 +10,7 @@ export default function Holidays() {
          </div>
          <div class="HolidayMain">
           
-          <HolidayCalendar/>
+          {/* <HolidayCalendar/> */}
        
          </div> 
          </>   

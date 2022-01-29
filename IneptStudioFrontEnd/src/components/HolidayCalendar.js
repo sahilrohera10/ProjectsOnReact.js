@@ -1,43 +1,86 @@
+// import React, { Component } from 'react';
 
-import * as React from 'react';
-// import * as ReactDOM from 'react-dom';
-import { ScheduleComponent, Day, Week, WorkWeek, Month, Inject, ViewsDirective, ViewDirective } from '@syncfusion/ej2-react-schedule';
-import { ButtonComponent } from '@syncfusion/ej2-react-buttons';
-export default class HolidayCalendar extends React.Component {
-    constructor() {
-        super(...arguments);
-        this.scheduleData = [{
-                Id: 3,
-                Subject: 'Testing',
-                StartTime: new Date(2018, 1, 11, 9, 0),
-                EndTime: new Date(2018, 1, 11, 10, 0),
-                IsAllDay: false
-            }, {
-                Id: 4,
-                Subject: 'Vacation',
-                StartTime: new Date(2018, 1, 13, 9, 0),
-                EndTime: new Date(2018, 1, 13, 10, 0),
-                IsAllDay: false
-            }];
-    }
-    onDeleteClick() {
-        this.scheduleObj.deleteEvent(4);
-        this.buttonObj.element.setAttribute('disabled', 'true');
-    }
-    render() {
-        return (<div>
-        <ButtonComponent id='delete' ref={t => this.buttonObj = t} title='Delete' onClick={this.onDeleteClick.bind(this)}>Delete</ButtonComponent>
-        <ScheduleComponent ref={t => this.scheduleObj = t} width='100%' height='550px' selectedDate={new Date(2018, 1, 15)} eventSettings={{ dataSource: this.scheduleData }}>
-            <ViewsDirective>
-                <ViewDirective option='Day'/>
-                <ViewDirective option='Week'/>
-                <ViewDirective option='WorkWeek'/>
-                <ViewDirective option='Month'/>
-            </ViewsDirective>
-            <Inject services={[Day, Week, WorkWeek, Month]}/>
-        </ScheduleComponent>
-    </div>);
-    }
-}
-;
+// import {Calendar , momentLocalizer} from 'react-big-calendar';
+// import moment from 'moment';
+// import 'react-big-calendar/lib/css/react-big-calendar.css';
 
+// import axios from 'axios'
+
+
+// // import logo from './logo.svg';
+// import "react-big-calendar/lib/css/react-big-calendar.css";
+// // import './App.css';
+
+// moment.locale('en-GB');
+// Calendar.momentLocalizer(moment);
+
+// class HolidayCalender extends Component {
+
+  
+
+//   constructor(props) {
+//     super(props)
+
+//     this.state = {
+//       cal_events: [
+//         //State is updated via componentDidMount
+//       ],
+//     }
+
+//   }
+
+//   convertDate = (date) => {
+//     return moment.utc(date).toDate()
+//   }
+
+//   componentDidMount() {
+
+
+//     axios.get('http://localhost:3001/events')
+//       .then(response => {
+//         console.log(response.data);
+//         let appointments = response.data;
+        
+//         for (let i = 0; i < appointments.length; i++) {
+          
+//           appointments[i].start = this.convertDate(appointments[i].start)
+//           appointments[i].end = this.convertDate(appointments[i].end)
+          
+//         }
+
+//         this.setState({
+//           cal_events:appointments
+//         })
+  
+//       })
+//       .catch(function (error) {
+//         console.log(error);
+//       });
+//   }
+
+
+//   render() {
+
+//     const { cal_events } = this.state
+
+//     return (
+//       <div className="App">
+//         <header className="App-header">
+//           {/* <img src={logo} className="App-logo" alt="logo" /> */}
+//           <h1 className="App-title">React Calendar</h1>
+//         </header>
+//         <div style={{ height: 700 }}>
+//           <Calendar
+//             events={cal_events}
+//             step={30}
+//             defaultView='week'
+//             views={['month','week','day']}
+//             defaultDate={new Date()}
+//           />
+//         </div>
+//       </div>
+//     );
+//   }
+// }
+
+// export default HolidayCalender;

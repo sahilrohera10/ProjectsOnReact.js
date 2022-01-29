@@ -13,11 +13,11 @@ import Attendence from './components/Attendance';
 import Application from './components/Application';
 import TaskManager from './components/TaskManager';
 import Invoices from './components/Invoices';
-import Notification from './components/Notification';
+// import Notification from './components/Notification';
 import Holidays from './components/Holidays';
-import reactDom from 'react-dom';
+// import reactDom from 'react-dom';
 import TeamAnalysis from './components/TeamAnalysis';
-import PrimarySearchAppBar from './components/NavBar';
+// import PrimarySearchAppBar from './components/NavBar';
 
 
 
@@ -38,7 +38,7 @@ function App() {
         <Route path="/TaskManager" element={<TaskManager/>}/>
         <Route path="/Application" element={<Application/>}/>
         <Route path="/invoices" element={<Invoices/>}/>
-        <Route path="/notification" element={<Notification/>}/>
+        {/* <Route path="/notification" element={<Notification/>}/> */}
         <Route path="/holidays" element={<Holidays/>}/>
         <Route path="/TeamAnalysis" element={<TeamAnalysis/>}/>
 

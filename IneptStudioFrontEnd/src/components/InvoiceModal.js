@@ -4,9 +4,10 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import TextField from '@mui/material/TextField';
-// import DatePicker from '@mui/lab/DatePicker';
-// import AdapterDateFns from '@mui/lab/AdapterDateFns';
-// import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
+import LocalizationProvider from '@mui/lab/LocalizationProvider';
+import DatePicker from '@mui/lab/DatePicker';
+
 
 const style = {
   position: 'absolute',
@@ -139,12 +140,14 @@ export default function InvoiceModal() {
 <div className='billDate' >
 {/* <LocalizationProvider dateAdapter={AdapterDateFns}>
       <DatePicker
-        label="Basic example"
-        value = {values.date}  onChange={handleChange('date')}
+        label="Date" 
+        variant = 'contained'
+        value={values.date}
+        onClick={handleChange('date')}
+     
         renderInput={(params) => <TextField {...params} />}
       />
     </LocalizationProvider> */}
-
 <legend>Date</legend>
 <input type="date" value = {values.date}  onChange={handleChange('date')} required />
 </div>

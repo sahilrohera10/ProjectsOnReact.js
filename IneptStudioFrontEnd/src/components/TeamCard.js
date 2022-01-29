@@ -1,11 +1,12 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 
 export default function TeamCard(props) {
     return (
       
             <div className='team'  >
-            <Link to="/TeamAnalysis" style={{textDecoration : "none"}}   >  <h2   className='TeamNames'  > {props.teamName} </h2> </Link>
+         <h3  style={{textAlign : 'center'}}  > {props.ActivityName} </h3> 
+         <h2 style={{textAlign : 'center'}}  >   {props.values}     </h2>
             </div>
            
       
